@@ -72,18 +72,7 @@ body {
     padding: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* chris fix  */
 
 * {
     box-sizing: border-box;
@@ -116,8 +105,6 @@ body {
 }
 
 
-
-
 /* On screens that are 1900px wide, make the columns in wide form */
 
 @media screen and (max-width: 1900px) {
@@ -125,7 +112,6 @@ body {
         width: 60%;
     }
 }
-
 
 
 /* On 1200px wide or less, go from 60% to 100% screen   */
@@ -137,8 +123,6 @@ body {
 }
 
 
-
-
 /* On   768px wide or less, go from 3 columns to one column */
 
 @media screen and (max-width: 768px) {
@@ -146,7 +130,3 @@ body {
         width: 100%;
     }
 }
-
-
-
-
