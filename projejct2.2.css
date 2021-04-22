@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: wheat;
+    background-color: black;
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(207, 16, 16);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: rgb(74, 85, 190);
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topnav {
+        position: relative;
+    }
+    .topnav .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* title */
+
+#title-div {
+    margin: auto;
+    width: 50%;
+    outline: crimson solid 1px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*6 box  */
+/* #recipe-div MAIN BIG DIV */
+#recipe-div{    
+    margin: auto;
+    width: 60%;
+}
+#responsive{
+    display: flex;   
+   flex-wrap: wrap;
+   width: 100%;
+}
+
+/* imagee div */
+.rec-div{
+    width: 33.33%;
+    height: 500px;
+    text-align: center;
+}
+.rec-div img {
+
+    padding-top: 20px;
+    width: 80%;
+    height: auto;
+}
+
+
+
+
+/* On screens that are 1900px wide, make the columns in wide form */
+
+@media screen and (max-width: 1900px) {
+    #recipe-div{
+        width: 60%;
+    }
+}
+
+
+
+/* On 1200px wide or less, go from 60% to 100% screen   */
+
+@media screen and (max-width: 1200px) {
+    #recipe-div, #title-div, .topnav {
+        width: 100%;
+    }
+}
+
+
+
+
+/* On   768px wide or less, go from 3 columns to one column */
+
+@media screen and (max-width: 768px) {
+    .rec-div, #title-div, .topnav {
+        width: 100%;
+    }
+}
+
+
+
+
